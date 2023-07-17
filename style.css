@@ -1,0 +1,464 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:darksalmon
+}
+
+header {
+    background-color: chocolate;
+    width: 0 90vw;
+    display: flex;
+    position: sticky;
+    top: 0;
+    margin: 30px;
+    z-index: 999;
+}
+
+nav {
+    margin: auto;
+    width: 33vw;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+}
+
+li {
+    font-size: 150%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transition: .1s;
+}
+
+li:hover {
+    color: white;
+    cursor: pointer;
+    text-decoration: underline;
+    box-shadow: 0px 0px 50px 5px white;
+}
+
+header nav ul a {
+    color: black;
+    text-decoration: none;
+}
+
+#container {
+    margin: auto;
+    width: 90vw;
+    border: none;
+}
+
+h1 {
+    font-size: 50px;
+    position: relative;
+    top: 120px;
+    left: 10px;
+}
+
+h2 {
+    padding-left: 50px;
+    user-select: none;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+span {
+    color: white;
+    font-family: cursive;
+}
+
+p {
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+/* home page */
+
+.sign {
+    text-align: center;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color: white;
+    position: relative;
+    top: 0;
+    padding: 30px;
+}
+
+#home img {
+    width: 30vw;
+    height: 55vh;
+    border-radius: 50%;
+    background-color: chocolate;
+    margin: auto;
+    padding: 20px;
+}
+
+#home {
+    display: grid;
+    padding: 20px;
+    border-top: solid;
+}
+
+#logo {
+    width: 40vw;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#profile {
+    display: flex;
+    padding: 50px;
+}
+
+/* about page */
+
+#about {
+    border-top: solid;
+    padding: 20px;
+}
+
+#about legend {
+    font-size: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+#about fieldset {
+    border-radius: 25px;
+    border-color: chocolate;
+    border-width: 5px;
+    background-color: white;
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50vw;
+}
+
+#about fieldset img {
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50%;
+    margin: auto;
+    padding: 10px;
+    transition: .3s;
+}
+
+#about fieldset img:hover {
+    width: 10vw;
+    height: 20vh;
+    border-radius: 50%;
+    background-color: chocolate;
+    margin: auto;
+    cursor: pointer;
+}
+
+#about fieldset a {
+    margin: auto;
+    gap: 2em;
+}
+
+#about h2 {
+    padding-left: 0px;
+    font-size: 50px;
+    color: chocolate;
+    text-decoration: underline;
+}
+
+#about #skills {
+    padding: 20px;
+    padding-bottom: 60px;
+    background-color: wheat;
+}
+
+#about .skills {
+    background-color: transparent;
+    border-radius: 0px;
+    border: solid;
+    height: 5vw;
+    width: 100%;
+    position: relative;
+    left: -5px;
+    box-shadow: 3px 3px 30px 20px darksalmon;
+    font-size: 60px;
+    font-weight: bolder;
+    text-align: right;
+    user-select: none;
+}
+
+#about #html {
+    height: 5vw;
+    width: 80%;
+    background-color: chocolate; 
+}
+
+#about #css {
+    height: 5vw;
+    width: 75%;
+    background-color: chocolate;
+}   
+
+#about #js {
+    height: 5vw;
+    width: 70%;
+    background-color: chocolate;
+} 
+
+/* project page */
+
+#project {
+    padding: 50px;
+    border-top: solid;
+}
+
+#project #card {
+    background-color: wheat;
+    text-align: center;
+    margin: auto;
+    width: 30vw;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    transition: .1s;
+}
+
+#project #card:hover {
+    border-color: chocolate;
+    border-style: solid;
+    cursor: pointer;
+}
+
+#project #title {
+    border-bottom: solid;
+    width: 30vw;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+#project a {
+    font-size: 30px;
+    text-decoration: none;
+    color: chocolate;
+    transition: .1s;
+}
+
+#project a:hover {
+    font-size: 30px;
+    text-decoration: underline;
+    color: chocolate;
+}
+
+/* display on the phone */
+
+@media screen and (max-width: 640px) {
+header {
+    width: 97vw;
+    margin: auto;
+}
+
+h2 {
+    padding-left: 15px;
+}
+
+nav {
+    margin: auto;
+    width: 65vw;
+}
+
+#profile {
+    display: grid;
+    padding: 20px;
+}
+
+#container {
+    width: 95vw;
+}
+
+h1 {
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.sign {
+    font-size: 25px;
+    user-select: none;
+}
+
+#home img {
+    width: 60vw;
+    height: 55vh;
+}
+
+#logo {
+    width: 80vw;
+}
+
+p {
+    font-size: 25px;
+}
+
+#about fieldset {
+    width: 70vw;
+    height: 25vh;
+}
+
+#about legend {
+    font-size: 30px;
+}
+
+#about fieldset img {
+    width: 15vw;
+    height: 15vh;
+    padding: 5px;
+}
+
+#about fieldset img:hover {
+    width: 15vw;
+    height: 15vh;
+}
+
+#about h2 {
+    font-size: 30px;
+}
+
+#about #html {
+    font-size: 25px;
+}
+
+#about #css {
+    font-size: 25px;
+}   
+
+#about #js {
+    font-size: 25px;
+} 
+
+#project #card {
+    width: 60vw;
+}
+
+#project #title {
+    border-bottom: solid;
+    width: 60vw;
+}
+
+}
+
+/* display on the tablet */
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    header {
+        width: 0 90vw;
+        margin: 30px;
+    }
+    
+    h2 {
+        padding-left: 35px;
+    }
+    
+    nav {
+        margin: auto;
+        width: 50vw;
+    }
+    
+    #profile {
+        display: flex;
+        padding: 30px;
+    }
+
+    #container {
+        width: 95vw;
+        border: none;
+    }
+    
+    h1 {
+        font-size: 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        top: 90px;
+        left: 5px;
+    }
+    
+    .sign {
+        font-size: 25px;
+        user-select: none;
+    }
+    
+    #home img {
+        width: 50vw;
+        height: 50vh;
+    }
+    
+    #logo {
+        width: 60vw;
+    }
+    
+    p {
+        font-size: 25px;
+    }
+    
+    #about fieldset {
+        width: 70vw;
+        height: 25vh;
+    }
+    
+    #about legend {
+        font-size: 35px;
+    }
+    
+    #about fieldset img {
+        width: 15vw;
+        height: 15vh;
+        padding: 5px;
+    }
+    
+    #about fieldset img:hover {
+        width: 15vw;
+        height: 15vh;
+    }
+    
+    #about h2 {
+        font-size: 35px;
+    }
+    
+    #about #html {
+        font-size: 30px;
+    }
+    
+    #about #css {
+        font-size: 30px;
+    }   
+    
+    #about #js {
+        font-size: 30px;
+    } 
+    
+    #project #card {
+        width: 55vw;
+    }
+    
+    #project #title {
+        border-bottom: solid;
+        width: 55vw;
+    }
+    
+}
+
+
